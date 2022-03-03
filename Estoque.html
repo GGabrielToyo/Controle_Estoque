@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Estoque</h1>
+    </header>
+
+
+    <section>
+        <div id='dados'>
+
+
+            <div class="lineInput">
+                <label>Produto:</label>
+                <input type="text" name='nome' id='produto' placeholder="Nome do Produto">
+            </div>
+
+
+            <div class="lineInput">
+                <label>Descrição:</label>
+                <input type="text" name='desc' id='desc' placeholder="Descrição do Produto">
+            </div>
+
+
+            <div class="lineInput">
+                <label>Valor: R$</label>
+                <input type="number" name='valor' id='valor' placeholder="Valor do Produto">
+            </div>
+
+
+            <div>
+                <label>Disponível para venda:</label>
+
+                <input type="radio" name='disp' value="Sim" id='dispS'>
+                <label>Sim</label>
+
+                <input type="radio" name='disp' value="Não" id='dispN'>
+                <label>Não</label>
+            </div>
+
+
+            <div>
+                <button onclick="produto.cadastrar()" id="btn">Salvar</button>
+                <button onclick="produto.cancelar()">Cancelar</button>
+            </div>
+
+
+        </div>
+
+        <div id='res'>
+            <marquee behavior='alternate'>Cadastrando Produto...</marquee>
+        </div>
+
+
+    </section>
+
+
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th class="center">ID</th>
+                <th>Produto</th>
+                <th>Valor</th>
+                <th>Disponível</th>
+                <th>Ações</th>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer>
+        <p>&copy; Gabriel Toyo</p>
+    </footer>
+
+
+</body>
+
+</html>

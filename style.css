@@ -1,0 +1,85 @@
+body {
+    background: rgba(124, 132, 133, 0.74);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    color: rgb(248, 241, 241);
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+
+}
+
+section {
+    background: rgb(255, 255, 255);
+    border-radius:  10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(19, 17, 17)
+}
+div {   
+    padding: 5px;
+}
+
+.content {
+
+    margin-top: 15px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 255, 255);
+    width: 40%;
+
+}
+
+table th {
+    background-color: rgba(226, 210, 210, 0.493);
+}
+table td img {
+    width: 22px;
+}
+
+footer {
+    color: rgba(133, 38, 38, 0.747);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 5px 10px rgb(12, 8, 8);
+
+}
+
+.lineInput {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: rgba(117, 134, 136, 0.74);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    font-weight: bold;
+    transition:  all ease 0.3s;
+}
+
+button:hover {
+    background-color: rgba(45, 62, 65, 0.74);
+}
+
+.center {
+    text-align: center;
+}
+
+.res {
+    font-family: 'Montserrat', sans-serif; 
+}
